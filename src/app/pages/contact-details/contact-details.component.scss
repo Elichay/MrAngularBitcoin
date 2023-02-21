@@ -1,0 +1,37 @@
+.contact-details-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    align-items: center;
+
+    .contact-details-name {}
+
+    .contact-details-img {
+        width: 250px;
+
+    }
+
+    .contact-details-email {
+
+        // justify-self: start;
+    }
+
+    .contact-details-phone {
+        // justify-self: start;
+    }
+
+    .actions {
+        display: flex;
+        // justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+        gap: 1rem;
+
+        button {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}

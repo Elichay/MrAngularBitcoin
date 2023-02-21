@@ -1,0 +1,27 @@
+<main class="main-page main-layout">
+  <app-header></app-header>
+<!-- <header class="app-header">
+    <h1>Mr. Angular Bitcoin</h1>
+    <nav class="app-nav">
+      <ul>
+        <li><button mat-raised-button color="accent" (click)="selectCmp('Home')">Home</button></li>
+        <li><button mat-raised-button color="accent" (click)="selectCmp('Contact')">Contact</button></li>
+        <li><button mat-raised-button color="accent" (click)="selectCmp('Charts')">Charts</button></li>
+        <li><button mat-raised-button color="accent" (click)="selectCmp('About')">About</button></li>
+      </ul>
+    </nav>
+  </header> -->
+  <router-outlet></router-outlet>
+
+  <!-- <section [ngSwitch]="selectedCmp">
+    <home-page *ngSwitchCase="'Home'"></home-page>
+    <contact-page *ngSwitchCase="'Contact'"></contact-page>
+    <chart-page *ngSwitchCase="'Charts'"></chart-page>
+    <about-page *ngSwitchCase="'About'"></about-page>
+    <p *ngSwitchDefault="">Nothing found</p>
+</section> -->
+
+</main>
+<footer>
+  <!-- <p>© 2018 Mr. Angular Bitcoin</p> -->
+</footer>

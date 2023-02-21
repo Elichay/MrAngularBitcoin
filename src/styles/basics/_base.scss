@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: $clr-text-primary;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: ubuntu-regular;
+  // margin: 0 0 0.6em;
+  // line-height: 1;
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+button {
+  font-size: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+
+  &.show-more {
+
+  }
+
+  &.contact-btn {
+    background-color: $clr-btn-dark;
+    color: $clr-text-btn;
+    border: 0;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $clr-txt-btn-hover;
+      background-color: $clr-btn-hover;
+    }
+
+
+  }
+
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

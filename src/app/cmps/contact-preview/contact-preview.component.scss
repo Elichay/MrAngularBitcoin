@@ -1,0 +1,57 @@
+
+.contact-preview{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 250px;
+    border: #d32f2f 1px solid;
+    border-radius: 14px;
+    margin: 10px 11px 12px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #e0e0e0;
+    }
+
+
+.contact-preview-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 235px;
+    
+    .contact-preview-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .contact-preview-data{
+        justify-self: flex-start;
+        flex-grow: 1;
+    }
+
+    .actions{
+
+        .remove-btn{
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #d32f2f;
+            }
+        }
+    }
+    
+}
+
+
+}
+

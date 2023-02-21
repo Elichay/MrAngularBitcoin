@@ -1,0 +1,49 @@
+// Colors
+
+$clr-brand: #34b15e;
+
+$clr-text-primary: hsl(0, 0%, 13%); 
+$clr-text-secondary: hsl(0, 0%, 33%);
+$clr-text-light: rgb(234, 234, 234);
+
+
+$clr-border: hsl(0, 0%, 87%);
+
+$clr-bg: #2a8348;
+$clr-bg-secondary: #c0bdbd;
+$clr-bg-light: #23f590;
+
+
+$clr-hover-bg: rgb(247, 247, 247);
+
+$clr-text-btn: rgb(72, 72, 72);
+$clr-txt-btn-hover: rgb(244, 243, 243);
+$clr-btn-dark: rgb(192, 189, 189);
+$clr-btn-hover: rgb(72, 72, 250);
+
+
+// BORDER RADIUS
+$border-radius: 12px;
+
+
+//PADDING
+$wide-layout-padding: 80px;
+$normal-layout-padding: 40px;
+$mobile-layout-padding: 24px;
+
+//MAX-WIDTH
+$primary-max-width: 2360px;
+$secondary-max-width: 1280px;
+$chat-msg-min-width: 370px;
+
+// Breakpoints
+$mobile-breakpoint: 460px;
+$narrow-breakpoint: 744px;
+$normal-breakpoint: 945px;
+$wide-breakpoint: 1440px;
+
+$grid-break-point-1: 460px;
+$grid-break-point-2: 644px;
+$grid-break-point-3: 950px;
+$grid-break-point-4: 1128px;
+$grid-break-point-5: 1440px;

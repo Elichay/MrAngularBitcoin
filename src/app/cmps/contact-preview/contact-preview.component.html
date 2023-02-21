@@ -1,0 +1,16 @@
+<!-- <section (click)="onSelectContactId()" class="contact-preview"> -->
+<!-- <section routerLink="/contact/{{contact._id}}" class="contact-preview"> -->
+<section [routerLink]="['/contact', contact._id]" class="contact-preview">
+    <section class="contact-preview-container flex">
+        <img class="contact-preview-img" src="https://robohash.org/{{contact._id}}?set=set2" alt="">
+        <section class="contact-preview-data">
+            <p class="contact-preview-Name">{{contact.name}}</p>
+            <!-- <p>Phone: {{contact.phone}}</p> -->
+            <!-- <p>Email: {{contact.email}}</p> -->
+        </section>
+        <section class="actions grid">
+            <button (click)="onRemoveContact($event)" class="remove-btn">X</button>
+            <button (click)="onEditContact($event)" class="remove-btn">🖋</button>
+        </section>
+    </section>
+</section>

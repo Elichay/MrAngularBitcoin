@@ -1,0 +1,18 @@
+<section class="main-app">
+<!-- <contact-details *ngIf="selectedContactId; else contactList" [contactId]="selectedContactId"></contact-details> -->
+
+<!-- <ng-template #contactList> -->
+    <h1>Contacts</h1>
+    <div class="contacts-actions flex justify-between">
+        <contact-filter></contact-filter>
+        <a routerLink="/contact/edit">Add Contact</a>
+    </div>
+    <contact-list
+    (remove)="onRemoveContact($event)"
+    [contacts]="contacts$|async"
+    >
+    </contact-list>
+<!-- </ng-template> -->
+</section>
+
+<router-outlet></router-outlet>

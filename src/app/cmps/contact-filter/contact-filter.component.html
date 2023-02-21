@@ -1,0 +1,11 @@
+<form class="contact-filter">
+    <!-- <input type="text" placeholder="Search a contact"> -->
+    <input
+    [(ngModel)]="contactFilter.term"
+    (ngModelChange)="onSetFilter()"
+    name="term"
+    type="text"
+    id="term"
+    placeholder="Search a contact"
+  />
+</form>
