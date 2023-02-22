@@ -81,8 +81,8 @@ export class MonthChartComponent {
 }
 
 function getMonthName(date: Date) {
-  const monthNames = ["Jan`", "Feb`", "March", "April", "May", "June",
-      "July", "Aug`", "Sep`", "Oct`", "Nov`", "Dec`"
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
   ]
   return monthNames[date.getMonth()]
 }

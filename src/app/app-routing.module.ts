@@ -9,6 +9,7 @@ import { ChartPageComponent } from './pages/chart-page/chart-page.component'
 import { ContactDetailsPageComponent } from './pages/contact-details/contact-details.component'
 import { ContactEditPageComponent } from './pages/contact-edit/contact-edit.component'
 import { AuthGuard } from './guards/auth.guard'
+import { UserGuard } from './guards/user.guard'
 import { ContactResolver } from './services/contact.resolver'
 import { SignupComponent } from './pages/sign-up/sign-up.component'
 
@@ -40,7 +41,7 @@ const routes: Routes = [
   { path: 'charts', component: ChartPageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'signup', component: SignupComponent },
-  { path: '', component: HomePageComponent },
+  { path: '', component: HomePageComponent, canActivate: [UserGuard] },
 ]
 
 @NgModule({
