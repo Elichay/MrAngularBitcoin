@@ -1,4 +1,4 @@
-<section class="charts-container">
-    <month-chart></month-chart>
-    <!-- <market-price-chart></market-price-chart> -->
-  </section>
+<section *ngIf="prices$|async as prices" class="main-container">
+  <month-chart [prices]="prices"></month-chart>
+  <market-chart [prices]="prices"></market-chart>
+</section>

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { GoogleChartsModule } from 'angular-google-charts';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,6 +18,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ChartPageComponent } from './pages/chart-page/chart-page.component';
 import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { MonthChartComponent } from './cmps/month-chart/month-chart.component';
+import { SignupComponent } from './pages/sign-up/sign-up.component';
+import { MarketChartComponent } from './cmps/market-chart/market-chart.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,11 @@ import { MonthChartComponent } from './cmps/month-chart/month-chart.component';
     ChartPageComponent,
     AppHeaderComponent,
     MonthChartComponent,
+    SignupComponent,
+    MarketChartComponent,
   ],
   imports: [
     BrowserModule,
-    GoogleChartsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
