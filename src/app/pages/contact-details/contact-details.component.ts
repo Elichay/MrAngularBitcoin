@@ -47,7 +47,7 @@ export class ContactDetailsPageComponent implements OnInit {
     // this.router.navigate(['/', 'contact'])
   }
 
-  updateMoves() {
+  updateTransfers() {
     this.user = this.userService.getUser()
     this.transfers = this.user.transfers.filter(transfer => transfer.toId === this.contact._id)
 }
