@@ -71,17 +71,36 @@ export class UserService {
   }
 
 
-  addTransfer(contact: Contact, amount: number): void {
+  // addTransfer(contact: Contact, amount: number): void {
+  //   const transfer: Transfer = {
+  //     toId: contact._id || '',
+  //     to: contact.name,
+  //     at: Date.now(),
+  //     amount: amount
+  //   }
+  //   // console.log('this.curUser:', this.curUser)
+  //   this.curUser.bitCoin -= amount
+  //   this.curUser.transfers.unshift(transfer)
+  //   localStorage.setItem('curUser', JSON.stringify(this.curUser))
+  // }
+
+
+  public addTransfer(contact: Contact, amount: number) {
+    const user = this.getUser()
     const transfer: Transfer = {
-      toId: contact._id || '',
+      toId: contact._id,
       to: contact.name,
       at: Date.now(),
       amount: amount
-    }
-    this.curUser.bitCoin -= amount
-    this.curUser.transfers.unshift(transfer)
-    localStorage.setItem('curUser', JSON.stringify(this.curUser))
+    } as Transfer
+
+    user.transfers.push(transfer)
+    user.bitCoin -= amount
+    this.saveLocalUser(user)
+    this.save(user)
   }
+
+
 
   public getEmptyUser() {
     return {

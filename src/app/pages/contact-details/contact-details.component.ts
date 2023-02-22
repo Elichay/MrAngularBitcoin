@@ -14,7 +14,7 @@ import { UserService } from 'src/app/services/user.service'
 export class ContactDetailsPageComponent implements OnInit {
 
   constructor(
-    private contactService: ContactService,
+    // private contactService: ContactService,
     private route: ActivatedRoute,
     private router: Router,
     private userService: UserService
