@@ -3,6 +3,8 @@ import { lastValueFrom, Subscription } from 'rxjs'
 import { Contact } from '../../model/contact'
 import { ContactService } from 'src/app/services/contact.service'
 import { ActivatedRoute, Router } from '@angular/router'
+import { User, Transfer } from 'src/app/model/user'
+import { UserService } from 'src/app/services/user.service'
 
 @Component({
   selector: 'contact-details',
@@ -14,9 +16,11 @@ export class ContactDetailsPageComponent implements OnInit {
   constructor(
     private contactService: ContactService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private userService: UserService
   ) { }
-
+  user !: User
+  transfers !: Transfer[]
 
   // @Input() contactId!: string
   // contact!: Contact | undefined
@@ -42,6 +46,13 @@ export class ContactDetailsPageComponent implements OnInit {
     this.router.navigateByUrl('contact')
     // this.router.navigate(['/', 'contact'])
   }
+
+  updateMoves() {
+    this.user = this.userService.getUser()
+    this.transfers = this.user.transfers.filter(transfer => transfer.toId === this.contact._id)
+}
+
+
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe()

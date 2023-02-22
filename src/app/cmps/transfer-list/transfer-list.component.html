@@ -1,0 +1,9 @@
+<section class="transfer-list">
+    <h2>Move list</h2>
+    <ul class="transfer-list">
+      <li *ngFor="let transfer of transfers">
+        <transfer-preview [transfer]="transfer"></transfer-preview>
+      </li>
+    </ul>
+  </section>
+  

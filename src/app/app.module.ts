@@ -20,6 +20,9 @@ import { AppHeaderComponent } from './cmps/app-header/app-header.component';
 import { MonthChartComponent } from './cmps/month-chart/month-chart.component';
 import { SignupComponent } from './pages/sign-up/sign-up.component';
 import { MarketChartComponent } from './cmps/market-chart/market-chart.component';
+import { TransferFundsComponent } from './cmps/transfer-funds/transfer-funds.component';
+import { TransferListComponent } from './cmps/transfer-list/transfer-list.component';
+import { TransferPreviewComponent } from './cmps/transfer-preview/transfer-preview.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { MarketChartComponent } from './cmps/market-chart/market-chart.component
     MonthChartComponent,
     SignupComponent,
     MarketChartComponent,
+    TransferFundsComponent,
+    TransferListComponent,
+    TransferPreviewComponent,
   ],
   imports: [
     BrowserModule,

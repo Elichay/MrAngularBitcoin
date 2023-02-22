@@ -20,3 +20,5 @@
         </button>
     </div>
 </div>
+<transfer-funds (updateMoves)="updateMoves()" [contact]="contact"></transfer-funds>
+<transfer-list *ngIf="transfers.length" [transfers]="transfers"></transfer-list>

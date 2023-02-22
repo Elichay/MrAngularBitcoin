@@ -1,0 +1,17 @@
+<section class="transfer-fund">
+    <h2>Transfer coins to {{contact.name}}</h2>
+    <form class="amount-form" (submit)="onSendTransfer()">
+      <input
+        type="number"
+        [(ngModel)]="amount"
+        name="amount"
+        required=""
+        min= 0
+        max="{{user.bitCoin}}"
+      />
+      <label>
+        <span>Amount</span>
+      </label>
+      <button>Transfer</button>
+    </form>
+  </section>
